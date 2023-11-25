@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import "./Header.css";
 function Header({
@@ -9,19 +9,43 @@ function Header({
   eduRef,
   workRef,
   expRef,
-  footerRef,
 }) {
   const [activeLink, setActiveLink] = useState("");
   const navRef = useRef();
-  const sections = [
-    { ref: introRef, name: "Intro" },
-    { ref: aboutRef, name: "About Me" },
-    { ref: skillRef, name: "Skill" },
-    { ref: eduRef, name: "Education" },
-    { ref: workRef, name: "Work" },
-    { ref: expRef, name: "Experience" },
-  ];
+  const sections = useMemo(
+    () => [
+      { ref: introRef, name: "Intro" },
+      { ref: aboutRef, name: "About Me" },
+      { ref: skillRef, name: "Skill" },
+      { ref: eduRef, name: "Education" },
+      { ref: workRef, name: "Work" },
+      { ref: expRef, name: "Experience" },
+    ],
+    [introRef, aboutRef, skillRef, eduRef, workRef, expRef]
+  );
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      for (const section of sections) {
+        if (section.ref.current) {
+          const offsetTop = section.ref.current.offsetTop;
+          const offsetBottom = offsetTop + section.ref.current.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveLink(section.name);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [sections]);
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
