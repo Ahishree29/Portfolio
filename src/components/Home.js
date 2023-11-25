@@ -1,8 +1,6 @@
 import React from "react";
-import { Typewriter, Cursor } from "react-simple-typewriter";
-import ParticleBackground from "./ParticleBackground";
+import { Typewriter } from "react-simple-typewriter";
 import "./Home.css";
-import Header from "./Header";
 
 function Home({ aboutRef, scrollToRef }) {
   return (
