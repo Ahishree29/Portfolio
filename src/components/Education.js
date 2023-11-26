@@ -5,7 +5,7 @@ import { HiAcademicCap } from "react-icons/hi";
 function Education() {
   return (
     <div className="education">
-      <h1 className="title">
+      <h1 className="title" style={{ paddingBottom: "6rem" }}>
         <HiAcademicCap className="icon" />
         EDUCATION
       </h1>

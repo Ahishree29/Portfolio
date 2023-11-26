@@ -84,7 +84,10 @@ function Header({
   return (
     <>
       <div className="menu">
-        <h1> Ahishree</h1>
+        <h1>
+          {" "}
+          <img className="ARPlogo" src="./ARPLogo.png" alt="ARP" />
+        </h1>
         <nav className="nav" ref={navRef}>
           <div
             style={{

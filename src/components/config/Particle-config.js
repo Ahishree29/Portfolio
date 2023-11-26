@@ -7,9 +7,16 @@ const Particleconfig = {
     image: "",
     position: "",
     repeat: "",
-    size: "",
+    size: {
+      random: true,
+      value: {
+        min: 1, // Adjust the minimum size
+        max: 1, // Adjust the maximum size
+      },
+    },
     opacity: 1,
   },
+
   backgroundMask: {
     composite: "destination-out",
     cover: {
@@ -329,8 +336,8 @@ const Particleconfig = {
     number: {
       density: {
         enable: true,
-        width: 1920,
-        height: 1080,
+        width: 700,
+        height: 800,
       },
       limit: 0,
       value: 100,
@@ -382,7 +389,7 @@ const Particleconfig = {
       },
       value: {
         min: 1,
-        max: 3,
+        max: 2,
       },
       animation: {
         count: 0,

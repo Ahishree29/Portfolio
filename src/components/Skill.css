@@ -8,37 +8,88 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
   font-family: "Courier New", Courier, monospace;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 6rem;
+  padding-right: 10rem;
 }
+
 @media (max-width: 730px) {
   .skill {
     width: 100vh;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 580px) {
   .skill {
-    padding-right: 8rem;
-    padding-left: 8rem;
+    padding-bottom: 15rem;
   }
 }
-
+@media (max-width: 560px) {
+  .skill {
+    padding-bottom: 20rem;
+  }
+}
+@media (max-width: 530px) {
+  .skill {
+    padding-bottom: 25rem;
+  }
+}
+@media (max-width: 495px) {
+  .skill {
+    padding-bottom: 35rem;
+  }
+}
+@media (max-width: 450px) {
+  .skill {
+    padding-bottom: 45rem;
+  }
+}
+@media (max-width: 405px) {
+  .skill {
+    padding-bottom: 55rem;
+  }
+}
+@media (max-width: 375px) {
+  .skill {
+    padding-bottom: 65rem;
+  }
+}
+@media (max-width: 350px) {
+  .skill {
+    padding-bottom: 75rem;
+  }
+}
+@media (max-width: 325px) {
+  .skill {
+    padding-bottom: 85rem;
+  }
+}
+@media (max-width: 305px) {
+  .skill {
+    padding-bottom: 95rem;
+  }
+}
+@media (max-width: 285px) {
+  .skill {
+    padding-bottom: 105rem;
+  }
+}
+@media (max-width: 270px) {
+  .skill {
+    padding-bottom: 115rem;
+  }
+}
 .container {
   margin-top: 4rem;
-  width: auto;
+  padding: 0;
+  width: 100%;
   height: auto;
-  background-color: rgba(56, 53, 53, 0.5);
+  background-color: rgba(27, 25, 25, 0.5);
   border-radius: 15px;
   opacity: 0 1px;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 15rem;
-}
-@media (max-width: 1700px) {
-  .container {
-    padding-left: 10rem;
-  }
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
 @media (max-width: 1400px) {
@@ -92,11 +143,16 @@
     padding-left: 4rem;
   }
 }
+@media (max-width: 790px) {
+  .container {
+    margin-top: 8rem;
+  }
+}
 
 @media (max-width: 250px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
-    padding-left: 15rem;
+
     margin-right: 3rem;
   }
 }
