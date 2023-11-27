@@ -114,7 +114,6 @@
 @media (max-width: 495px) {
   .workcard {
     width: 25rem;
-    height: 30rem;
   }
 }
 @media (max-width: 405px) {
@@ -130,7 +129,7 @@
 .accordian {
   padding: 20px;
   height: auto;
-  width: 55rem;
+  width: auto;
   color: black;
   background-color: rgb(14, 185, 156);
   transition: max-height 0.3s ease-in-out;
@@ -210,6 +209,7 @@
 }
 .acc-button {
   display: flex;
+
   justify-content: space-between;
   padding: 2rem;
 }
