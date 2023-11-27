@@ -38,6 +38,10 @@ Access the site through your browser at http://localhost:3000 .
 Contributions
 Contributions to enhance the portfolio site or fix issues are welcome. Please fork the repository, make changes, and create a pull request. Ensure to adhere to the project's code of conduct.
 
+# Live Demo
+
+Check out the live version of the project https://ahishreeportfolio.netlify.app/.
+
 # Author
 
 Ahishree Rai P - Add your contact or social media links
