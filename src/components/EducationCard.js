@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 function EducationCard({ image, education, institute, year }) {
   useEffect(() => {
-    Aos.init({ duration: 1000, offset: -400 });
+    Aos.init({ duration: 1000, offset: -500 });
   }, []);
   return (
     <div className="card" data-aos="flip-left">
