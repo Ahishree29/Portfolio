@@ -21,6 +21,11 @@ function Work() {
         <HiDesktopComputer className="icon" />
         WORK
       </h1>
+      <h4 className="quotes">
+        "Every project is a canvas for learning, a testament to growth. It might
+        not be perfect, but each step forward is a masterpiece in progress,
+        shaping my journey of continuous improvement."
+      </h4>
 
       <div className="workcard">
         <img src="Project.png" alt="Project" className="workImage" />

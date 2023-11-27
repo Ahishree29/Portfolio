@@ -4,93 +4,11 @@
   background-color: rgb(0, 0, 0);
   height: auto;
   width: 100%;
-  padding: 2rem;
+
   padding-bottom: 10rem;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   padding-top: 10rem;
 
   flex-direction: column;
-
-  padding-left: 6rem;
-  padding-right: 10rem;
-}
-
-@media (max-width: 730px) {
-  .education {
-    width: 100vh;
-  }
-}
-@media (max-width: 600px) {
-  .education {
-    padding-bottom: 20rem;
-  }
-}
-@media (max-width: 580px) {
-  .education {
-    padding-bottom: 25rem;
-  }
-}
-@media (max-width: 550px) {
-  .education {
-    padding-bottom: 30rem;
-  }
-}
-@media (max-width: 500px) {
-  .education {
-    padding-bottom: 40rem;
-  }
-}
-@media (max-width: 480px) {
-  .education {
-    padding-bottom: 45rem;
-  }
-}
-
-@media (max-width: 455px) {
-  .education {
-    padding-bottom: 50rem;
-    padding-right: 8rem;
-    padding-left: 8rem;
-  }
-}
-@media (max-width: 440px) {
-  .education {
-    padding-bottom: 55rem;
-  }
-}
-@media (max-width: 420px) {
-  .education {
-    padding-bottom: 65rem;
-  }
-}
-@media (max-width: 390px) {
-  .education {
-    padding-bottom: 75rem;
-  }
-}
-@media (max-width: 360px) {
-  .education {
-    padding-bottom: 85rem;
-  }
-}
-@media (max-width: 335px) {
-  .education {
-    padding-bottom: 95rem;
-  }
-}
-@media (max-width: 320px) {
-  .education {
-    padding-bottom: 105rem;
-  }
-}
-@media (max-width: 300px) {
-  .education {
-    padding-bottom: 115rem;
-  }
-}
-@media (max-width: 285px) {
-  .education {
-    padding-bottom: 125rem;
-  }
 }

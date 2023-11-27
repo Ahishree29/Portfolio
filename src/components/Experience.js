@@ -14,13 +14,13 @@ function Experience() {
         <HiDesktopComputer className="icon" />
         EXPERIENCE
       </h1>
-      <div className="main">
+      <div className="exp">
         <div className="company" data-aos="fade-right">
           <h1>SignDesk</h1>
           <img src="./signdesk_logo.png" alt="Signdesk" className="img" />
           <p>Malleshwaram, Bangalore,56003</p>
         </div>
-        <div className="workexp" data-aos="fade-left">
+        <div className="workexp">
           <h2>Associate Software Engineer</h2>
           <h4>September 2022 - July 2023</h4>
           <p>

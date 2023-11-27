@@ -4,139 +4,55 @@
   background-color: rgb(0, 0, 0);
   height: auto;
   width: 100%;
-  padding: 2rem;
+
   padding-bottom: 10rem;
   padding-top: 10rem;
   font-family: "Courier New", Courier, monospace;
-  padding-left: 6rem;
-  padding-right: 10rem;
+
   padding-bottom: 15rem;
 }
-@media (max-width: 730px) {
-  .experience {
-    width: 100vh;
-  }
-}
-@media (max-width: 590px) {
-  .experience {
-    padding-bottom: 20rem;
-  }
-}
-@media (max-width: 560px) {
-  .experience {
-    padding-bottom: 25rem;
-  }
-}
-@media (max-width: 530px) {
-  .experience {
-    padding-bottom: 30rem;
-  }
-}
-@media (max-width: 505px) {
-  .experience {
-    padding-bottom: 35rem;
-  }
-}
-@media (max-width: 530px) {
-  .experience {
-    padding-bottom: 40rem;
-  }
-}
-@media (max-width: 465px) {
-  .experience {
-    padding-bottom: 45rem;
-  }
-}
-@media (max-width: 430px) {
-  .experience {
-    padding-right: 8rem;
-    padding-left: 8rem;
-    padding-bottom: 50rem;
-  }
-}
-@media (max-width: 415px) {
-  .experience {
-    padding-bottom: 55rem;
-  }
-}
-@media (max-width: 395px) {
-  .experience {
-    padding-bottom: 60rem;
-  }
-}
-@media (max-width: 380px) {
-  .experience {
-    padding-bottom: 65rem;
-  }
-}
-@media (max-width: 365px) {
-  .experience {
-    padding-bottom: 70rem;
-  }
-}
-@media (max-width: 355px) {
-  .experience {
-    padding-bottom: 75rem;
-  }
-}
-@media (max-width: 345px) {
-  .experience {
-    padding-bottom: 85rem;
-  }
-}
-@media (max-width: 325px) {
-  .experience {
-    padding-bottom: 95rem;
-  }
-}
-@media (max-width: 305px) {
-  .experience {
-    padding-bottom: 105rem;
-  }
-}
-@media (max-width: 285px) {
-  .experience {
-    padding-bottom: 115rem;
-  }
-}
-@media (max-width: 275px) {
-  .experience {
-    padding-bottom: 125rem;
-  }
-}
-.main {
+
+.exp {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   padding-top: 4rem;
 }
 @media (max-width: 760px) {
-  .main {
+  .exp {
     display: flex;
     flex-direction: column;
   }
 }
 .company {
   height: 20rem;
+  margin: auto;
   width: 20rem;
   background-color: rgb(43, 41, 41, 0.1);
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 25px;
 }
 .workexp {
   height: auto;
   width: auto;
-  padding: 15px;
+  padding: 1rem;
   color: rgb(181, 80, 184);
+  font-size: 25px;
   background-color: rgb(54, 54, 57, 0.1);
+
+  margin-top: 40px;
 }
-@media (max-width: 530px) {
+
+@media (max-width: 760px) {
   .workexp {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
-@media (max-width: 505px) {
+
+@media (max-width: 530px) {
   .workexp {
-    margin-top: 50px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
 

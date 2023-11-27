@@ -3,87 +3,16 @@
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
-  padding: 2rem;
+
   padding-top: 10rem;
   padding-bottom: 10rem;
-  padding-left: 6rem;
-  padding-right: 10rem;
+
   font-family: "Courier New", Courier, monospace;
 }
-@media (max-width: 1260px) {
-  .about {
-    padding-right: 10rem;
-  }
-}
-@media (max-width: 1070px) {
-  .about {
-    padding-right: 8rem;
-  }
-}
-@media (max-width: 730px) {
-  .about {
-    width: 100vh;
-  }
-}
-@media (max-width: 580px) {
-  .about {
-    padding-bottom: 15rem;
-  }
-}
-@media (max-width: 510px) {
-  .about {
-    padding-bottom: 30rem;
-  }
-}
-@media (max-width: 480px) {
-  .about {
-    padding-bottom: 35rem;
-  }
-}
-@media (max-width: 455px) {
-  .about {
-    padding-bottom: 40rem;
-  }
-}
-@media (max-width: 430px) {
-  .about {
-    padding-right: 10rem;
-    padding-left: 6rem;
-    padding-bottom: 45rem;
-  }
-}
-@media (max-width: 315px) {
-  .about {
-    padding-bottom: 55rem;
-  }
-}
-@media (max-width: 298px) {
-  .about {
-    padding-bottom: 65rem;
-  }
-}
-@media (max-width: 278px) {
-  .about {
-    padding-bottom: 75rem;
-  }
-}
-@media (max-width: 265px) {
-  .about {
-    padding-bottom: 85rem;
-  }
-}
-@media (max-width: 240px) {
-  .about {
-    padding: 1rem;
-    padding-top: 10rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 90rem;
-  }
-}
+
 .image {
   height: 25rem;
-  width: 30rem;
+  width: 60rem;
   border-radius: 7rem;
   overflow: hidden;
   cursor: pointer;
@@ -96,7 +25,36 @@
     width: 23rem;
   }
 }
-
+@media (max-width: 550px) {
+  .image {
+    height: 16rem;
+    width: 21rem;
+  }
+}
+@media (max-width: 455px) {
+  .image {
+    height: 14rem;
+    width: 19rem;
+  }
+}
+@media (max-width: 375px) {
+  .image {
+    height: 12rem;
+    width: 17rem;
+  }
+}
+@media (max-width: 335px) {
+  .image {
+    height: 10rem;
+    width: 15rem;
+  }
+}
+@media (max-width: 295px) {
+  .image {
+    height: 8rem;
+    width: 13rem;
+  }
+}
 .image:hover {
   filter: grayscale(0);
   transform: scale(1.2);
@@ -113,33 +71,13 @@
     margin-top: 3rem;
   }
 }
-@media (max-width: 480px) {
-  .info {
-    margin-top: 15rem;
-  }
-}
-@media (max-width: 425px) {
-  .info {
-    margin-top: 20rem;
-  }
-}
-@media (max-width: 375px) {
-  .info {
-    margin-top: 25rem;
-  }
-}
-@media (max-width: 330px) {
-  .info {
-    margin-top: 30rem;
-  }
-}
 
 .details {
   margin-left: 5rem;
   font-family: cursive;
   color: rgb(203, 13, 139);
-  font-size: larger;
-  width: 65rem;
+  font-size: 25px;
+  width: auto;
 }
 @media (max-width: 1620px) {
   .details {

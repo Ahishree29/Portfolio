@@ -5,11 +5,17 @@ import { HiAcademicCap } from "react-icons/hi";
 function Education() {
   return (
     <div className="education">
-      <h1 className="title" style={{ paddingBottom: "6rem" }}>
-        <HiAcademicCap className="icon" />
-        EDUCATION
-      </h1>
-
+      <div>
+        <h1 className="title">
+          <HiAcademicCap className="icon" />
+          EDUCATION
+        </h1>
+        <h4 className="quotes">
+          " Education is not simply about achieving a certain outcome, but about
+          nurturing curiosity, fostering critical thinking, and encouraging a
+          thirst for lifelong learning."
+        </h4>
+      </div>
       <EducationCard
         image="./VCET_college.png"
         education="Bacholer Of Engineering In Electronics And Communication"

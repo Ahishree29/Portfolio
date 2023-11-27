@@ -7,8 +7,6 @@
   display: flex;
   flex-direction: row;
 
-  display: flex;
-  flex-direction: row;
   margin: auto;
   margin-bottom: 10px;
 }
@@ -17,19 +15,42 @@
     width: 40rem;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 700px) {
   .card {
     width: 35rem;
   }
 }
-@media (max-width: 530px) {
+
+@media (max-width: 605px) {
   .card {
     width: 30rem;
+  }
+}
+@media (max-width: 515px) {
+  .card {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 430px) {
+  .card {
+    width: 20rem;
+  }
+}
+@media (max-width: 335px) {
+  .card {
+    width: 18rem;
   }
 }
 .Eduimage {
   height: 15rem;
   width: 20rem;
+}
+@media (max-width: 335px) {
+  .Eduimage {
+    width: 18rem;
+  }
 }
 .Details {
   margin-left: 20px;
