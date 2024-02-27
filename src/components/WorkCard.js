@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Work.css";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 function WorkCard({ codeUrl, viewUrl, projectImg, content, projectName }) {
