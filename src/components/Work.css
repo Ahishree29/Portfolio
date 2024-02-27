@@ -220,3 +220,13 @@
   background-color: black;
   color: white;
 }
+.project {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1800px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+}

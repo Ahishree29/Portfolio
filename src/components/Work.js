@@ -4,17 +4,11 @@ import { useState } from "react";
 import { HiChevronDown, HiChevronUp, HiDesktopComputer } from "react-icons/hi";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import WorkCard from "./WorkCard";
 function Work() {
-  const [isExtend, setIsExtend] = useState(false);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  function handleCode() {
-    window.open("https://github.com/Ahishree29/Treandytreasure", "_blank");
-  }
-  function handleView() {
-    window.open("https://trendytresure.netlify.app", "_blank");
-  }
   return (
     <div className="work">
       <h1 className="title">
@@ -27,33 +21,36 @@ function Work() {
         shaping my journey of continuous improvement."
       </h4>
 
-      <div className="workcard">
-        <img src="Project.png" alt="Project" className="workImage" />
-        <button onClick={() => setIsExtend(!isExtend)} className="header">
-          <h3>Trendy Treasure </h3>
-          <h3 style={{ fontSize: "30px" }}>
-            {!isExtend ? <HiChevronDown /> : <HiChevronUp />}
-          </h3>
-        </button>
-        {isExtend && (
-          <div className="accordian" data-aos="fade-down">
-            Trendy Treasure is an inclusive e-commerce platform offering a
+      <div className="project">
+        <WorkCard
+          codeUrl="https://github.com/Ahishree29/Treandytreasure"
+          viewUrl="https://trendytresure.netlify.app"
+          projectImg="Project.png"
+          projectName="Trendy Treasure"
+          content=" Trendy Treasure is an inclusive e-commerce platform offering a
             diverse range of clothing for men, women, boys, and girls. Users can
             explore products and sign in to access the shopping cart feature,
             receiving a welcome email upon registration. The platform enables
             seamless shopping experiences, allowing users to add items to their
             cart and proceed to order, followed by prompt order confirmation
-            emails, ensuring a smooth purchasing journey.
-            <div className="acc-button">
-              <button className="btn" onClick={handleView}>
-                View
-              </button>
-              <button className="btn" onClick={handleCode}>
-                Code
-              </button>
-            </div>
-          </div>
-        )}
+            emails, ensuring a smooth purchasing journey."
+        />
+        <WorkCard
+          codeUrl="https://chatapp-s1qq.onrender.com/"
+          viewUrl="https://github.com/Ahishree29/ChatSwiftly"
+          projectImg="chat site.png"
+          projectName="ChatSwiftly"
+          content="ChatSwiftly is a real-time chatting web application designed to
+        provide users with a seamless and intuitive chatting experience.
+        With its modern and responsive interface, ChatSwiftly allows users
+        to connect with each other instantly, facilitating both one-on-one
+        and group conversations. Built with React.js, Tailwind CSS, and
+        powered by Node.js Express for the backend, ChatSwiftly leverages
+        Socket.IO for real-time communication and JWT for authentication.
+        Cloudinary is used for profile picture uploads, while MongoDB serves
+        as the database for storing user information and chat data.
+     "
+        />
       </div>
     </div>
   );
