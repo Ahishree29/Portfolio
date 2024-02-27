@@ -23,8 +23,8 @@ function Work() {
 
       <div className="project">
         <WorkCard
-          codeUrl="https://github.com/Ahishree29/Treandytreasure"
-          viewUrl="https://trendytresure.netlify.app"
+          viewUrl="https://github.com/Ahishree29/Treandytreasure"
+          codeUrl="https://trendytresure.netlify.app"
           projectImg="Project.png"
           projectName="Trendy Treasure"
           content=" Trendy Treasure is an inclusive e-commerce platform offering a
@@ -36,8 +36,8 @@ function Work() {
             emails, ensuring a smooth purchasing journey."
         />
         <WorkCard
-          codeUrl="https://chatapp-s1qq.onrender.com/"
-          viewUrl="https://github.com/Ahishree29/ChatSwiftly"
+          viewUrl="https://chatapp-s1qq.onrender.com/"
+          codeUrl="https://github.com/Ahishree29/ChatSwiftly"
           projectImg="chat site.png"
           projectName="ChatSwiftly"
           content="ChatSwiftly is a real-time chatting web application designed to
