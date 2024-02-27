@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./Work.css";
-import { useState } from "react";
-import { HiChevronDown, HiChevronUp, HiDesktopComputer } from "react-icons/hi";
+
+import { HiDesktopComputer } from "react-icons/hi";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import WorkCard from "./WorkCard";
