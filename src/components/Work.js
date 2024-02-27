@@ -23,8 +23,8 @@ function Work() {
 
       <div className="project">
         <WorkCard
-          viewUrl="https://github.com/Ahishree29/Treandytreasure"
-          codeUrl="https://trendytresure.netlify.app"
+          viewUrl="https://trendytresure.netlify.app"
+          codeUrl="https://github.com/Ahishree29/Treandytreasure"
           projectImg="Project.png"
           projectName="Trendy Treasure"
           content=" Trendy Treasure is an inclusive e-commerce platform offering a
