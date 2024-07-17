@@ -2,7 +2,7 @@ const Particleconfig = {
   autoPlay: true,
   background: {
     color: {
-      value: "#000",
+      value: "#11161D",
     },
     image: "",
     position: "",
@@ -10,8 +10,8 @@ const Particleconfig = {
     size: {
       random: true,
       value: {
-        min: 1, // Adjust the minimum size
-        max: 1, // Adjust the maximum size
+        min: 1,
+        max: 0,
       },
     },
     opacity: 1,
@@ -21,7 +21,7 @@ const Particleconfig = {
     composite: "destination-out",
     cover: {
       color: {
-        value: "#fff",
+        value: "#000",
       },
       opacity: 1,
     },
@@ -54,8 +54,8 @@ const Particleconfig = {
         mode: "trail",
         parallax: {
           enable: false,
-          force: 2,
-          smooth: 10,
+          force: 5,
+          smooth: 50,
         },
       },
       resize: {
@@ -70,10 +70,10 @@ const Particleconfig = {
         quantity: 5,
         particles: {
           color: {
-            value: "#ff0000",
+            value: "#ffffff",
             animation: {
               enable: true,
-              speed: 400,
+              speed: 1000,
               sync: true,
             },
           },
@@ -175,14 +175,14 @@ const Particleconfig = {
               value: "#ffffff",
             },
             stop: {
-              value: "#000000",
+              value: "#ffffff",
             },
           },
           radius: 1000,
         },
         shadow: {
           color: {
-            value: "#000000",
+            value: "#ffffff",
           },
           length: 2000,
         },
@@ -359,7 +359,7 @@ const Particleconfig = {
         delay: 0,
         sync: false,
         mode: "auto",
-        startValue: "random",
+        startValue: "#ffffff",
         destroy: "none",
         minimumValue: 0.3,
       },
@@ -368,7 +368,7 @@ const Particleconfig = {
     shadow: {
       blur: 0,
       color: {
-        value: "#000",
+        value: "#ffffff",
       },
       enable: false,
       offset: {
@@ -399,7 +399,7 @@ const Particleconfig = {
         delay: 0,
         sync: false,
         mode: "auto",
-        startValue: "random",
+        startValue: "#fff",
         destroy: "none",
         minimumValue: 1,
       },
@@ -548,7 +548,7 @@ const Particleconfig = {
     links: {
       blink: false,
       color: {
-        value: "random",
+        value: "#03D0FE",
       },
       consent: false,
       distance: 100,
@@ -558,7 +558,7 @@ const Particleconfig = {
       shadow: {
         blur: 5,
         color: {
-          value: "#000",
+          value: "#fff",
         },
         enable: false,
       },

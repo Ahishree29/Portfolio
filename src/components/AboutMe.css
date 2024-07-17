@@ -1,112 +1,149 @@
 .about {
-  color: rgb(126, 182, 22);
-  background-color: rgb(0, 0, 0);
+  color: #03d0fe;
+  background-color: #11161d;
   height: 100%;
   width: 100%;
 
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-
-  font-family: "Courier New", Courier, monospace;
-}
-
-.image {
-  height: 25rem;
-  width: 60rem;
-  border-radius: 7rem;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 30px;
-}
-@media (max-width: 1330px) {
-  .image {
-    margin: auto;
-    height: 18rem;
-    width: 23rem;
-  }
-}
-@media (max-width: 550px) {
-  .image {
-    height: 16rem;
-    width: 21rem;
-  }
-}
-@media (max-width: 455px) {
-  .image {
-    height: 14rem;
-    width: 19rem;
-  }
-}
-@media (max-width: 375px) {
-  .image {
-    height: 12rem;
-    width: 17rem;
-  }
-}
-@media (max-width: 335px) {
-  .image {
-    height: 10rem;
-    width: 15rem;
-  }
-}
-@media (max-width: 295px) {
-  .image {
-    height: 8rem;
-    width: 13rem;
-  }
-}
-.image:hover {
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-.info {
   display: flex;
-  flex-direction: row;
-  margin-top: 13rem;
-}
-@media (max-width: 1330px) {
-  .info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .details {
-  margin-left: 5rem;
-  font-family: cursive;
-  color: rgb(203, 13, 139);
-  font-size: 25px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
   width: auto;
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
-@media (max-width: 1620px) {
+@media (max-width: 400px) {
   .details {
-    margin: 2rem;
-  }
-}
-@media (max-width: 1330px) {
-  .details {
-    margin: 1rem;
-    width: auto;
-  }
-}
-@media (max-width: 340px) {
-  .details {
-    margin-top: 5rem;
-  }
-}
-@media (max-width: 260px) {
-  .details {
-    margin-left: 0;
-  }
-}
-@media (max-width: 230px) {
-  .details {
-    margin-top: 10rem;
-    width: auto;
+    font-size: 15px;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
-.contact {
+.imgboarder {
+  width: 200px;
+  height: 200px;
+  margin-top: 4rem;
+  border-radius: 50%;
+  position: relative;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #03d0fe 0%,
+    #03d0fe 5%,
+    transparent 5%,
+    transparent 40%,
+    #03d0fe 50%
+  );
+  animation: animate 4s linear infinite;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+.imgboarder::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #ffffff 0%,
+    #fefefe 5%,
+    transparent 5%,
+    transparent 40%,
+    #ffffff 50%
+  );
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 50%;
+}
+
+.imgboarder::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  background: #11161d;
+  border-radius: 50%;
+  border: 8px solid #11161d;
+}
+
+.ahiimg {
+  width: 184px;
+  height: 184px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+.contactbox {
   margin-top: 2rem;
+}
+
+@media (max-width: 430px) {
+  .details {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.video {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(10, 11, 11);
+}
+@media (max-width: 1520px) {
+  .video {
+    width: 95%;
+  }
+}
+@media (max-width: 856px) {
+  .video {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.video p {
+  padding: 2rem;
+}
+
+.resume {
+  margin-top: 2rem;
+  background-color: rgb(3, 208, 254);
+  padding: 10px;
+  border-radius: 8px;
+}
+.resume:hover {
+  box-shadow: 0 0 5px rgb(3, 208, 254), 0 0 25px rgb(3, 208, 254),
+    0 0 50px rgb(3, 208, 254), 0 0 100px rgb(3, 208, 254),
+    0 0 200px rgb(3, 208, 254);
 }

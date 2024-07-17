@@ -1,9 +1,5 @@
-import { useState } from "react";
 import "./Work.css";
-import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 function WorkCard({ codeUrl, viewUrl, projectImg, content, projectName }) {
-  const [isExtend, setIsExtend] = useState(false);
-
   function handleCode() {
     window.open(codeUrl, "_blank");
   }
@@ -11,17 +7,15 @@ function WorkCard({ codeUrl, viewUrl, projectImg, content, projectName }) {
     window.open(viewUrl, "_blank");
   }
   return (
-    <div className="workcard">
-      <img src={projectImg} alt="Project" className="workImage" />
-      <button onClick={() => setIsExtend(!isExtend)} className="header">
-        <h3>{projectName}</h3>
-        <h3 style={{ fontSize: "30px" }}>
-          {!isExtend ? <HiChevronDown /> : <HiChevronUp />}
-        </h3>
-      </button>
-      {isExtend && (
-        <div className="accordian" data-aos="fade-down">
-          {content}
+    <div className="cardcontainer">
+      <div className="mycard">
+        <div className="cimg">
+          <img src={projectImg} alt="project"></img>
+          <h2>{projectName}</h2>
+        </div>
+
+        <div className="cdetail">
+          <p>{content}</p>
           <div className="acc-button">
             <button className="btn" onClick={handleView}>
               View
@@ -31,7 +25,7 @@ function WorkCard({ codeUrl, viewUrl, projectImg, content, projectName }) {
             </button>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

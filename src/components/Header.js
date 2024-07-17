@@ -9,6 +9,7 @@ function Header({
   eduRef,
   workRef,
   expRef,
+  contactRef,
 }) {
   const [activeLink, setActiveLink] = useState("");
   const navRef = useRef();
@@ -20,8 +21,9 @@ function Header({
       { ref: eduRef, name: "Education" },
       { ref: workRef, name: "Work" },
       { ref: expRef, name: "Experience" },
+      { ref: contactRef, name: "" },
     ],
-    [introRef, aboutRef, skillRef, eduRef, workRef, expRef]
+    [introRef, aboutRef, skillRef, eduRef, workRef, expRef, contactRef]
   );
 
   useEffect(() => {
@@ -30,29 +32,7 @@ function Header({
 
       for (const section of sections) {
         if (section.ref.current) {
-          const offsetTop = section.ref.current.offsetTop;
-          const offsetBottom = offsetTop + section.ref.current.offsetHeight;
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveLink(section.name);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [sections]);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      for (const section of sections) {
-        if (section.ref.current) {
-          const offsetTop = section.ref.current.offsetTop;
+          const offsetTop = section.ref.current.offsetTop - 100;
           const offsetBottom = offsetTop + section.ref.current.offsetHeight;
 
           if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
@@ -82,90 +62,31 @@ function Header({
   };
 
   return (
-    <>
-      <div className="menu">
-        <h1>
-          {" "}
-          <img className="ARPlogo" src="./ARPLogo.png" alt="ARP" />
-        </h1>
-        <nav className="nav" ref={navRef}>
+    <div className="menu">
+      <h1>
+        <img className="ARPlogo" src="./ARPLogo.png" alt="ARP" />
+      </h1>
+      <nav onClick={Showmenu} className="nav_button">
+        <FaBars />
+      </nav>
+      <nav className="nav" ref={navRef}>
+        {sections.map((section) => (
           <div
+            key={section.name}
+            className="items"
             style={{
               color:
-                activeLink === "Intro"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
+                activeLink === section.name
+                  ? "rgb(255,255,255)"
+                  : "rgb(3, 208, 254)",
             }}
-            onClick={() => handleSetActiveLink(introRef, "Intro")}
+            onClick={() => handleSetActiveLink(section.ref, section.name)}
           >
-            Home
+            {section.name}
           </div>
-
-          <div
-            style={{
-              color:
-                activeLink === "About Me"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
-            }}
-            onClick={() => handleSetActiveLink(aboutRef, "About Me")}
-          >
-            About Me
-          </div>
-
-          <div
-            style={{
-              color:
-                activeLink === "Skill"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
-            }}
-            onClick={() => handleSetActiveLink(skillRef, "Skill")}
-          >
-            Skill
-          </div>
-
-          <div
-            style={{
-              color:
-                activeLink === "Education"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
-            }}
-            onClick={() => handleSetActiveLink(eduRef, "Education")}
-          >
-            Education
-          </div>
-
-          <div
-            style={{
-              color:
-                activeLink === "Work"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
-            }}
-            onClick={() => handleSetActiveLink(workRef, "Work")}
-          >
-            Work
-          </div>
-
-          <div
-            style={{
-              color:
-                activeLink === " Experience"
-                  ? "rgb(203, 13, 139)"
-                  : "rgb(163, 22, 195)",
-            }}
-            onClick={() => handleSetActiveLink(expRef, " Experience")}
-          >
-            Experience
-          </div>
-        </nav>
-        <button onClick={Showmenu} className="nav_button">
-          <FaBars />
-        </button>
-      </div>
-    </>
+        ))}
+      </nav>
+    </div>
   );
 }
 export default Header;

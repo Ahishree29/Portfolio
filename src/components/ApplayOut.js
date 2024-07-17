@@ -5,7 +5,6 @@ function ApplayOut() {
   return (
     <div>
       <Header />
-
       <div style={{ overflowY: "scroll", height: "calc(100vh - 50px)" }}>
         <Outlet />
       </div>

@@ -59,7 +59,7 @@ function Footer({
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <span
-                style={{ color: "rgb(14, 185, 156)", fontSize: "15px" }}
+                style={{ color: "rgb(0,0,0)", fontSize: "15px" }}
                 className="title"
               >
                 <HiMail className="icon" /> ahishreeraip@gamil.com
@@ -74,7 +74,7 @@ function Footer({
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <span
-                style={{ color: "rgb(14, 185, 156)", fontSize: "15px" }}
+                style={{ color: "rgb(0,0,0)", fontSize: "15px" }}
                 className="title"
               >
                 <AiFillGithub className="icon" /> github.com/Ahishree29
@@ -89,7 +89,7 @@ function Footer({
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <span
-                style={{ color: "rgb(14, 185, 156)", fontSize: "15px" }}
+                style={{ color: "rgb(0,0,0)", fontSize: "15px" }}
                 className="title"
               >
                 <AiFillLinkedin className="icon" />{" "}

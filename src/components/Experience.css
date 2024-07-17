@@ -1,62 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .experience {
-  color: rgb(126, 182, 22);
-  font-family: cursive;
-  background-color: rgb(0, 0, 0);
   height: auto;
-  width: 100%;
-
-  padding-bottom: 10rem;
-  padding-top: 10rem;
-  font-family: "Courier New", Courier, monospace;
-
+  background-color: #11161d;
+  padding-top: 2rem;
   padding-bottom: 15rem;
 }
-
-.exp {
+.content {
+  height: auto;
+  margin: 20px;
+  margin-top: 9rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-top: 4rem;
+  flex-direction: row;
+  border: 8px solid rgb(251, 251, 251);
 }
-@media (max-width: 760px) {
-  .exp {
+.company {
+  margin: auto;
+  top: 50%;
+  background-color: #11161d;
+  padding: 25px;
+  font-size: 25px;
+  color: #03d0fe;
+}
+.img {
+  height: 30px;
+}
+.workexp {
+  left: 50%;
+  background-color: #03d0fe;
+  padding: 2rem;
+  padding-left: 5rem;
+  font-size: 25px;
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .content {
     display: flex;
     flex-direction: column;
   }
-}
-.company {
-  height: 20rem;
-  margin: auto;
-  width: 20rem;
-  background-color: rgb(43, 41, 41, 0.1);
-  padding: 2rem;
-  font-size: 25px;
-}
-.workexp {
-  height: auto;
-  width: auto;
-  padding: 1rem;
-  color: rgb(181, 80, 184);
-  font-size: 25px;
-  background-color: rgb(54, 54, 57, 0.1);
-
-  margin-top: 40px;
-}
-
-@media (max-width: 760px) {
-  .workexp {
-    margin-top: 30px;
+  .company {
+    padding: 5rem;
   }
-}
-
-@media (max-width: 530px) {
-  .workexp {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-.img {
-  height: 8rem;
-  width: 18rem;
 }
