@@ -1,7 +1,5 @@
 import "./AboutMe.css";
 import { HiUser } from "react-icons/hi";
-import { DefaultPlayer as Video } from "react-html5video";
-import resumeVideo from "../videos/Ahishree_Rai_P_Video_Resume.mp4";
 import "react-html5video/dist/styles.css";
 import thum from "../videos/Tumbnail.png";
 function AboutMe() {
@@ -53,9 +51,15 @@ function AboutMe() {
           </p>
         </div>
         <div className="video">
-          <Video poster={thum} style={{ width: "20rem" }}>
-            <source src={resumeVideo} type="video/webm" />
-          </Video>
+          <iframe
+            src="https://drive.google.com/file/d/1O4TMBqy8HWnltb3rWsgzldTDbW8nGwKP/preview"
+            width="100%"
+            height="215"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Video Resume"
+            style={{ backgroundImage: `url(${thum})`, backgroundSize: "cover" }}
+          ></iframe>
           <p>
             This is my video resume. Please check the video by clicking the play
             button so that you can get to know me better.
