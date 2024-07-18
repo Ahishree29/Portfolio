@@ -12,9 +12,13 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
   box-sizing: border-box;
+}
+.hello, .name, .inter {
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 
 .hello {
@@ -118,7 +122,7 @@
     height: 420px;
   }
   .home {
-    margin-top: 7rem;
+    margin-top: 0.5rem;
   }
   .hello {
     font-size: 3rem;
@@ -144,9 +148,7 @@
     width: 310px;
     height: 320px;
   }
-  .home {
-    margin-top: 9rem;
-  }
+  
   .hello {
     font-size: 2rem;
   }
@@ -166,14 +168,12 @@
   }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 382px) {
   .blob-container {
     width: 250px;
     height: 220px;
   }
-  .home {
-    margin-top: 11rem;
-  }
+ 
   .hello {
     font-size: 1.5rem;
     margin-top: 3rem;
@@ -190,7 +190,7 @@
   }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 232px) {
   .blob-container {
     width: 200px;
     height: 220px;

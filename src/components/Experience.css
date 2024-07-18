@@ -9,6 +9,7 @@
   padding-top: 2rem;
   padding-bottom: 15rem;
 }
+
 .content {
   height: auto;
   margin: 20px;
@@ -20,10 +21,14 @@
 .company {
   margin: auto;
   top: 50%;
-  background-color: #11161d;
+ 
   padding: 25px;
   font-size: 25px;
   color: #03d0fe;
+}
+.company .workexp .img{
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
 }
 .img {
   height: 30px;
@@ -32,7 +37,7 @@
   left: 50%;
   background-color: #03d0fe;
   padding: 2rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
   font-size: 25px;
   color: #000000;
 }
@@ -42,7 +47,7 @@
     display: flex;
     flex-direction: column;
   }
-  .company {
+  .company h1 p {
     padding: 5rem;
   }
 }

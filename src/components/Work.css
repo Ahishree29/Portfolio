@@ -143,3 +143,38 @@
   padding: 5px;
   border-radius: 15px;
 }
+
+@media (max-width: 440px) {
+  .cardcontainer  {
+   padding: 10px;
+   padding-bottom: 70px;
+  }
+}
+@media (max-width: 360px) {
+ 
+  .cardcontainer .mycard {
+    width: 260px;
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+  }
+  .cardcontainer .mycard:hover {
+    height: 650px;
+  }
+
+  .cardcontainer .mycard .cimg {
+    width: 150px;
+    height: 150px;
+    top: -60px;
+    left: 40px;
+  }
+  .cardcontainer .mycard .cimg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+  }
+  .work {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
