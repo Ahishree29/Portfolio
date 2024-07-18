@@ -62,7 +62,7 @@ textarea {
   margin: 5px;
   margin-top: 2rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .formbtn {
   width: auto;

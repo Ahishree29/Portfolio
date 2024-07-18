@@ -55,7 +55,7 @@
     opacity: 1;
     padding-right: 3rem;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .ARPlogo {
     width: 50px;
