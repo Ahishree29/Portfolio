@@ -27,11 +27,6 @@ function Education() {
     if (timelineRef.current) {
       observe.observe(timelineRef.current);
     }
-    return () => {
-      if (timelineRef.current) {
-        observe.unobserve(timelineRef.current);
-      }
-    };
   }, []);
 
   return (
