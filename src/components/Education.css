@@ -124,24 +124,27 @@
 @media (max-width: 600px) {
   .timeline {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     flex-direction: column;
   }
 
   .timeline::after {
-    left: 25%;
+    left: 10%;
   }
   .right-box {
     left: 0;
   }
   .box img {
-    left: -30px;
+    left: -20px;
   }
   .left-arrow {
     left: -15px;
     border-left: 0;
     border-right: 15px solid rgb(255, 255, 255);
+  }
+  .box{
+    width:85%
   }
 }
 

@@ -38,7 +38,7 @@
   background-color: #03d0fe;
   padding: 2rem;
   padding-left: 3rem;
-  font-size: 25px;
+  font-size: 20px;
   color: #000000;
 }
 
@@ -49,5 +49,8 @@
   }
   .company h1 p {
     padding: 5rem;
+  }
+  .workexp h1 h2 h3 h4 li {
+    font-size: 18px;
   }
 }
