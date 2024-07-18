@@ -6,7 +6,7 @@ import { HiDesktopComputer } from "react-icons/hi";
 import { useEffect } from "react";
 function Experience() {
   useEffect(() => {
-    Aos.init({ duration: 1000, offset: -200 });
+    Aos.init({ duration: 1000, offset: -100 });
   }, []);
   return (
     <div className="experience">
