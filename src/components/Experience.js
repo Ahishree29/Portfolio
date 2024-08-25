@@ -1,13 +1,9 @@
 import "./Experience.css";
-import Aos from "aos";
+
 import "aos/dist/aos.css";
 import { HiDesktopComputer } from "react-icons/hi";
-
-import { useEffect } from "react";
 function Experience() {
-  useEffect(() => {
-    Aos.init({ duration: 1000, offset: 1 });
-  }, []);
+ 
   return (
     <div className="experience">
       <h1 className="title">
@@ -15,7 +11,7 @@ function Experience() {
         EXPERIENCE
       </h1>
       <div className="content">
-        <div className="company" data-aos="fade-right">
+        <div className="company">
           <h1>SignDesk</h1>
           <img src="./signdesk_logo.png" alt="Signdesk" className="img" />
           <p>Malleshwaram, Bangalore,56003</p>
