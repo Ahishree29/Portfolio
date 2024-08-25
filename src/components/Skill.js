@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 function Skill() {
   useEffect(() => {
-    Aos.init({ duration: 3000, offset: -50 });
+    Aos.init({ duration: 3000, offset: 1 });
   }, []);
   return (
     <div className="skill">
