@@ -1,16 +1,13 @@
 import "./Skill.css";
 import SkillCard from "./SkillCard";
 import { HiDesktopComputer } from "react-icons/hi";
-import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 function Skill() {
-  useEffect(() => {
-    Aos.init({ duration: 3000, offset: 1 });
-  }, []);
+ 
   return (
     <div className="skill">
-      <div className="container" data-aos="zoom-in">
+      <div className="container" >
         <h1 className="title">
           <HiDesktopComputer className="icon" />
           SKILL
